@@ -1,0 +1,24 @@
+{% load thumbnail %}
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('#flexslider_{{ slider.pk }}').flexslider({controlsContainer: '#flex-container_{{ slider.pk }}', {{slider.settings|safeseq|join:", " }}});
+  });
+</script>
+<div id="flex-container_{{ slider.pk }}" class="flex-container" style="width: {{ slider.width }}px;">
+  <div id="flexslider_{{ slider.pk }}" class="flexslider">
+    <ul class="slides">
+    {% for slide in slider.slides.all %}
+      <li>
+        {% if slide.link %}<a href={{ slide.link }}>{% endif %}
+        {% thumbnail slide.image slider.geometry crop="center" as im %}
+          <img src="{{ im.url }}">
+        {% endthumbnail %}
+        {% if slide.link %}</a>{% endif %}
+        {% if slide.caption %}
+          <p class="flex-caption">{{ slide.caption|linebreaksbr }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>

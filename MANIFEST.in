@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+exclude requirements.txt
+recursive-include flexslider/static *
+recursive-include flexslider/templates *
+prune project

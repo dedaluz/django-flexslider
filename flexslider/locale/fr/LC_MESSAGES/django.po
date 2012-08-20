@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-20 14:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+#: admin.py:21
+msgid "Animation options"
+msgstr ""
+
+#: admin.py:25
+msgid "Advanced options"
+msgstr ""
+
+#: models.py:20
+msgid "name"
+msgstr ""
+
+#: models.py:21
+msgid "width"
+msgstr ""
+
+#: models.py:22
+msgid "height"
+msgstr ""
+
+#: models.py:25
+msgid "fade"
+msgstr ""
+
+#: models.py:26
+msgid "slide"
+msgstr ""
+
+#: models.py:28
+msgid "animation"
+msgstr ""
+
+#: models.py:31
+msgid "horizontal"
+msgstr ""
+
+#: models.py:32
+msgid "vertical"
+msgstr ""
+
+#: models.py:34
+msgid "slide direction"
+msgstr ""
+
+#: models.py:36
+msgid "animate slider automatically"
+msgstr ""
+
+#: models.py:37
+msgid "cycle speed"
+msgstr ""
+
+#: models.py:38
+msgid "Set the speed of the slideshow cycling, in milliseconds"
+msgstr ""
+
+#: models.py:39
+msgid "animation duration"
+msgstr ""
+
+#: models.py:40
+msgid "Set the speed of animations, in milliseconds"
+msgstr ""
+
+#: models.py:41
+msgid "Create navigation for previous/next navigation?"
+msgstr ""
+
+#: models.py:42
+msgid "Create navigation for paging control of each slide?"
+msgstr ""
+
+#: models.py:43
+msgid "Allow slider navigating via keyboard left/right keys"
+msgstr ""
+
+#: models.py:44
+msgid "Allow slider navigating via mousewheel"
+msgstr ""
+
+#: models.py:45
+msgid "Create pause/play dynamic element"
+msgstr ""
+
+#: models.py:46
+msgid "Randomize slide order"
+msgstr ""
+
+#: models.py:47
+msgid "Should the animation loop?"
+msgstr ""
+
+#: models.py:48
+msgid ""
+"Pause the slideshow when interacting with control elements, highly "
+"recommended."
+msgstr ""
+
+#: models.py:49
+msgid "Pause the slideshow when hovering over slider"
+msgstr ""
+
+#: models.py:66
+msgid "Previous"
+msgstr ""
+
+#: models.py:67
+msgid "Next"
+msgstr ""
+
+#: models.py:68
+msgid "Pause"
+msgstr ""
+
+#: models.py:69
+msgid "Play"
+msgstr ""
+
+#: models.py:90
+msgid "image"
+msgstr ""
+
+#: models.py:91
+msgid "link"
+msgstr ""
+
+#: models.py:92
+msgid "caption"
+msgstr ""

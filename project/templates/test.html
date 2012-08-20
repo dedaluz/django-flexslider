@@ -1,0 +1,12 @@
+{% load slider %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="{{ STATIC_URL }}flexslider/css/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}flexslider/js/jquery.flexslider-min.js"></script>
+</head>
+<body>
+{% slider slider_pk %}
+</body>
+</html>
