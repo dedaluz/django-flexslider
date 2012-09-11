@@ -94,18 +94,24 @@ class Slide(models.Model):
         (2, _('Public')),
     )
     
+    name = models.CharField(max_length=150, blank=True)
     slider = models.ForeignKey(Slider, related_name="slides")
     image = ImageField(_("image"), max_length=250, upload_to=slider_upload_path)
     link = models.URLField(_("link"), max_length=250, blank=True, verify_exists=False)
     caption = models.TextField(_("caption"), blank=True)
+    description = models.TextField(_('description'), blank=True)
     status  = models.IntegerField(_('status'), choices=STATUS_CHOICES, default=2)
+    credit = models.TextField(_("credit"), blank=True)
     # position field
     position = models.PositiveSmallIntegerField("Position", default=0)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     objects = PublicManager()
     
-
+    class Meta:
+        verbose_name = u'Slide'
+        verbose_name_plural = 'Slides'
+        ordering = ('position',)
 
 # cache busting when saving or deleting.
 def cache_buster(sender, **kwargs):
